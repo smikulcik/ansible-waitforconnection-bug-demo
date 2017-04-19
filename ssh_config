@@ -1,0 +1,14 @@
+Host *
+    User vagrant
+    StrictHostKeyChecking no
+    ForwardAgent yes
+
+Host bastion
+    HostName 192.168.33.20
+    IdentityFile "./.vagrant/machines/bastion/virtualbox/private_key"
+
+Host hidden
+    HostName 192.168.33.21
+    ProxyJump bastion
+    IdentityFile "./.vagrant/machines/hidden/virtualbox/private_key"
+

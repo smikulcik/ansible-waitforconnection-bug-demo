@@ -1,0 +1,11 @@
+---
+- name: provision servers
+  hosts: servers
+  tasks:
+    - ping:
+    - name: shutdown node
+      command: shutdown -r now
+      become: yes
+    - name: wait for it to come back up
+      wait_for_connection:
+    - ping:

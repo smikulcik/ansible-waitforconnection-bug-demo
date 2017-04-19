@@ -1,0 +1,3 @@
+-e git://github.com/smikulcik/ansible.giti@cf267b78dadafc399bc46b7df3a91d19b011c0fd#egg=ansible
+#-e git://github.com/ansible/ansible.git#egg=ansible
+
